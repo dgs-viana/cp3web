@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo Eletrônicos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <h1>Catálogo de Produtos Eletrônicos</h1>
+
+  <form id="form-filtro">
+    <select id="categoria-select">
+      <option value="todas">Todas as categorias</option>
+      <option value="Celulares">Celulares</option>
+      <option value="Computadores">Computadores</option>
+      <option value="Áudio">Áudio</option>
+      <option value="TVs">TVs</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="disponivel-checkbox"> Somente disponíveis
+    </label>
+
+    <button type="submit">Filtrar</button>
+  </form>
+
+  <button id="listar-btn">Listar Todos</button>
+
+  <div id="produtos-container"></div>
+
+  <script src="app.js"></script>
+
+
+
+</body>
+</html>
